@@ -1,5 +1,6 @@
 import os
 import json
+import re
 import requests
 import telebot
 from dotenv import load_dotenv
@@ -25,10 +26,12 @@ def check_new_topics(url, processed_ids):
     response = requests.get(url)
     data = response.json()
 
-    for topic in data['topics']:
-        topic_id = topic['id']
-        if topic_id not in processed_ids:
-            title = topic['title']
+    for topic in data['latest_posts']:
+        print("checking", topic)
+        topic_id = topic['topic_id']
+        if topic_id not in processed_ids and re.search(r'\[?ARFC\]?|\[?TEMP CHECK\]?', topic['topic_title'], re.IGNORECASE):
+            print("MATCH")
+            title = topic['topic_title']
             link = f"https://governance.aave.com/t/{topic_id}"
             send_alert(title, link)
             processed_ids.append(topic_id)
@@ -47,14 +50,8 @@ def send_alert(title, link):
 
 def main():
     processed_ids = load_processed_ids()
-
-    urls = [
-        "https://governance.aave.com/search.json?q=category:governance&q=ARFC",
-        "https://governance.aave.com/search.json?q=category:governance&q=TEMP&CHECK"
-    ]
-
-    for url in urls:
-        check_new_topics(url, processed_ids)
+    url = "https://governance.aave.com/posts.json"
+    check_new_topics(url, processed_ids)
 
 if __name__ == '__main__':
     main()
