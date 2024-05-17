@@ -40,8 +40,14 @@ tBTC has experienced periods of sharp volatility in the token supply since our o
 
 Most tBTC remains the Ethereum mainnet, with marginal adoption on Arbitrum, Optimism, Polygon, Base, and Solana.
 
-![image](https://hackmd.io/_uploads/H1zENA1XC.png)
+![image](https://hackmd.io/_uploads/SJluoW4QC.png)
 Source: [tBTC dashboard](https://dune.com/threshold/tbtc) - May 13th, 2024
+
+
+<iframe src="https://dune.com/embeds/3731044/6275040" frameborder="0" style="width:100%;height:300px;"></iframe>
+
+<iframe src="https://dune.com/embeds/3731035/6275028" frameborder="0" style="width:100%;height:300px;"></iframe>
+
 
 ### 2.1.2 Transaction Volume
 
@@ -56,12 +62,12 @@ Most of the volume is observed on the Ethereum mainnet.
 
 As shown below, daily trading volumes briefly regained historic levels. Volume increased in late 2023 and reached a peak level in February 2024. This coincides with BTC breaking historic prices around this time.
 
-![tBTC Trading Volume (01_05_2021 - 01_05_2024)](https://hackmd.io/_uploads/rkkcPdczR.png)
+![image](https://hackmd.io/_uploads/rkBti-Vm0.png)
 Source: [Coingecko](https://www.coingecko.com/en/coins/tbtc/historical_data?start=2024-02-03&end=2024-05-03) - tBTC USD (05/01/2021 - 05/01/2024)
 
 Relative to the initial analysis period (Oct - Nov 2023), daily volume spiked between Feb - March 2024 but has since declined to the initial levels, as shown below. The overall trend has been relatively flat (indicated by the orange trend line). 
 
-![tBTC Trading Volume (02_10_2023 - 02_05_2024)](https://hackmd.io/_uploads/rJLyYucz0.png)
+![image](https://hackmd.io/_uploads/ByHcsWE7A.png)
 Source: [Coingecko](https://www.coingecko.com/en/coins/tbtc/historical_data?start=2024-02-03&end=2024-05-03) - tBTC USD (10/02/2023 - 05/02/2024)
 
 ### 2.1.4 Average Transaction Size
@@ -115,7 +121,7 @@ BTC deposits are bridged to tBTC before being [deposited in the locking contract
 
 Other notable DeFi integrations remain the Curve and Uniswap V3 Pools and Convex staking vaults:
 
-![image](https://hackmd.io/_uploads/BJd2pygXR.png)
+![image](https://hackmd.io/_uploads/Hy43oZNQA.png)
 Source: [DefiLlama](https://defillama.com/yields?token=TBTC), May 13th, 2024
 
 ## 2.1 Competitive Analysis Metrics
@@ -140,7 +146,7 @@ Additional subsidization introduced has been the [tBTC SDK Bounty Program](https
 
 The "Closeness to Underlying" (C2U) metric measures the difference between the closing price of a synthetic asset and its underlying asset, such as tBTC, compared to BTC. The closing prices from CoinGecko between February 4th, 2024, and May 3rd, 2024, were used for this measurement.
 
-![3 month Closeness to Underlying c2u (tBTC to BTC)](https://hackmd.io/_uploads/HkdEObTz0.png)
+![image](https://hackmd.io/_uploads/B1_aiWVQC.png)
 Source: Coingecko - [BTC](https://www.coingecko.com/en/coins/bitcoin/historical_data) & [tBTC](https://www.coingecko.com/en/coins/tbtc/historical_data) Historic Data
 
 Over 3 months, on average, tBTC tended to close approximately 0.095% lower than BTC. The most significant negative deviation observed during this period was approximately -0.0125, while the most significant positive deviation was around 0.0126. 
@@ -153,7 +159,7 @@ Below is a graph of the daily returns of tBTC relative to spot market BTC over 9
 
 The average daily volatility for tBTC was 3.05%, while BTC was 3.13%. It indicated a similar market trend of tBTC relative to its underlying BTC.
 
-![tBTC Daily Returns vs BTC Daily Returns](https://hackmd.io/_uploads/rkLpndqfA.png)
+![image](https://hackmd.io/_uploads/BJQ0oWEQC.png)
 Source: Coingecko - [BTC](https://www.coingecko.com/en/coins/bitcoin/historical_data) & [tBTC](https://www.coingecko.com/en/coins/tbtc/historical_data) Historic Data
 
 ## 3.2 Liquidity Analysis
@@ -161,19 +167,19 @@ Source: Coingecko - [BTC](https://www.coingecko.com/en/coins/bitcoin/historical_
 
 Kraken remains the only active CEX exchange but shows very little daily volume. 
 
-![image](https://hackmd.io/_uploads/HydasxlmR.png)
+![image](https://hackmd.io/_uploads/Bk112ZEQR.png)
 Source: [Messari](https://messari.io/project/tbtc/markets?sortBy=realVolume24h&sortDirection=desc), May 13th, 2024
 
 tBTC DEX presence has increased since the initial analysis. At the time of our original report, tBTC had a presence across various DEX pools, including Curve, Uniswap V3, Balancer, Velodrome, Aerodrome, and Orca, with the heaviest concentration on Ethereum-based Curve pools. As of this addendum, the main liquidity venue remains Curve, although [Uniswap V3's tBTC/WTBC pool](https://info.uniswap.org/#/pools/0xdbac78be00503d10ae0074e5e5873a61fc56647c) has grown in use.
 
 Curve pool liquidity is concentrated in the tBTC/WBTC stableswap pool and crvUSD/tBTC/wstETH TriCrypto pool.
 
-![image](https://hackmd.io/_uploads/ry3x91xmA.png)
+![image](https://hackmd.io/_uploads/ry91hWVQ0.png)
 Source: [Curve](https://curve.fi/#/ethereum/pools?search=tbtc), May 13th, 2024
 
 The tBTC/WBTC UniV3 pool has grown since our original report from ~$1m TVL to nearly $6m TVL.
 
-![Screen Shot 2024-05-13 at 11.04.44 PM](https://hackmd.io/_uploads/rJMw1YlQA.png)
+![image](https://hackmd.io/_uploads/ry9xn-EmA.png)
 Source: [Uniswap V3](https://info.uniswap.org/#/tokens/0x18084fba666a33d37592fa2633fd49a74dd93a88), May 13th, 2024 
 
 With the increased activity on L2 chains, volumes from DEX such as Aerodrome (Base), Velodrome (Optimism), QuickSwap (Polygon), and Orca (Solana) can be observed:
@@ -196,7 +202,7 @@ Bid-ask spread ranged between 0.6% and 1%. Overall, there has been a general inc
 
 Liquidity reported by DEX Guru amounted to 27.9M USD (as of May 3rd, 2024), a ~50% increase from 18.6M USD found in our original report. Mainnet liquidity remained primarily in Uniswap, Curve, and Balancer. 
 
-![DEX liquidity](https://hackmd.io/_uploads/HkCIyY9MC.png)
+![image](https://hackmd.io/_uploads/r1t-hWEXC.png)
 Source: [DexGuru](https://dex.guru/liquidity/token/eth/0x18084fba666a33d37592fa2633fd49a74dd93a88) - May 3rd, 2024
 
 Additionally, TVL has increased in the three main pools with over 9M USD. Curve and Uniswap wBTC/tBTC pools have grown significantly since the initial report, while the crvUSD/tBTC/wstETH pool has declined.
@@ -221,15 +227,15 @@ Threshold USD ([thUSD](https://blog.threshold.network/announcing-threshold-usd-t
 
 Since the initial report, slippage has remained relatively the same, with a trade of 270.93 tBTC resulting in 1.36% trade slippage for 266.90 WBTC as of May 13th, 2024. 
 
-![image](https://hackmd.io/_uploads/BkYHygeQA.png)
+![image](https://hackmd.io/_uploads/ryvz2b4XC.png)
 https://defillama.com/liquidity - May 13th, 2024
 
 On Optimism and Arbitrum, the main liquidity pools (Curve) hold significantly less TVL, with a noteworthy price impact when swapping just five tBTC:
 
-![image](https://hackmd.io/_uploads/ByeClxe7A.png)
+![image](https://hackmd.io/_uploads/Bk7mhW4mC.png)
 Source: [Curve (Optimism)](https://curve.fi/#/optimism/pools/factory-v2-63/swap), May 13th, 2024
 
-![image](https://hackmd.io/_uploads/r1x5ggemC.png)
+![image](https://hackmd.io/_uploads/rJR7h-4mR.png)
 Source: [Curve (Optimism)](https://curve.fi/#/arbitrum/pools/factory-v2-98/swap), May 13th, 2024
 
 # Section 4 Technological Risk
@@ -238,7 +244,7 @@ Source: [Curve (Optimism)](https://curve.fi/#/arbitrum/pools/factory-v2-98/swap)
 
 Weekly commits and developer activity over the last 90 days have remained relatively similar to the initial analysis. Active developers remain at most 4 (see bottom right frame). As mentioned in the initial analysis, this is likely still the core team.
 
-![Dev activity](https://hackmd.io/_uploads/rkvrbtcfR.png)
+![image](https://hackmd.io/_uploads/HJa4hbEQ0.png)
 Source: [Artemis.xyz](https://app.artemis.xyz/developer-activity?tab=Overview&ecosystem=Keep+Network&ecosystemValue=Keep+Network)
 
 ### 4.1.7 Previous Incidents
@@ -260,7 +266,7 @@ The [L2WormholeGateway](https://docs.threshold.network/app-development/tbtc-v2/t
 
 The L2WormholeGateway contract ensures that the proper amount of tBTC is minted or burned during the transfer process and is designed to be upgradeable through a transparent proxy. The integration has been deployed on multiple chains, including Arbitrum ([ArbitrumWormholeGateway](https://arbiscan.io/address/0x1293a54e160D1cd7075487898d65266081A15458)) and Optimism ([OptimismWormholeGateway](https://optimistic.etherscan.io/address/0x1293a54e160D1cd7075487898d65266081A15458)).
 
-![Wormhole Architecture](https://hackmd.io/_uploads/ryjI9kgX0.png)
+![image](https://hackmd.io/_uploads/rJk8hZVXA.png)
 Source: [Wormhole Documentation](https://docs.wormhole.com/wormhole/explore-wormhole/components)
 
 While the Wormhole integration greatly enhances tBTC's cross-chain capabilities, it is essential to consider the potential risks associated with the Wormhole network and its Guardians. These risks, as identified by [L2Beat](https://l2beat.com/bridges/projects/portal) for the Wormhole Portal, include:
@@ -276,8 +282,7 @@ Users may only be exposed to Wormhole bridge risks if interacting with tBTC on L
 
 ### 4.3.1 Understanding the Oracle
 
-A Chainlink price feed has been introduced since our original report. The [tBTC/USD](https://data.chain.link/feeds/ethereum/mainnet/tbtc-usd) contract was created on [March 14th, 2024](https://etherscan.io/address/0x8350b7De6a6a2C1368E7D4Bd968190e13E354297) and had a 2% deviation threshold or 24-hour heartbeat. The deviation threshold differs from ChainLink's [BTC/USD feed](https://data.chain.link/feeds/ethereum/mainnet/btc-usd), set at 0.5%. ==Additional investigation is needed to understand the rationale for setting a higher threshold on tBTC.==
-
+A Chainlink price feed has been introduced since our original report. The [tBTC/USD](https://data.chain.link/feeds/ethereum/mainnet/tbtc-usd) contract was created on [March 14th, 2024](https://etherscan.io/address/0x8350b7De6a6a2C1368E7D4Bd968190e13E354297) and had a 2% deviation threshold or 24-hour heartbeat. The deviation threshold differs from ChainLink's [BTC/USD feed](https://data.chain.link/feeds/ethereum/mainnet/btc-usd), set at 0.5%. Current [ChainLink adapter](https://etherscan.io/address/0x230E0321Cf38F09e247e50Afc7801EA2351fe56F) for WBTC on Aave V3 uses a combinaison of WBTC/BTC (2% threshold) and BTC/USD (0.5% threshold). In this context, the tBTC/USD price feed may compare favorably.
 
 The price feed is currently categorized as a "[Medium Market Risk](https://docs.chain.link/data-feeds/price-feeds/addresses?network=ethereum&page=1&search=tbt)" price feed. The Chainlink risk assessment indicates that the feed "delivers a market price for assets that show signs of liquidity-related risk or other market structure-related risk." This means that tBTC has enough historical data for Chainlink to conduct a sufficient risk assessment. 
 
@@ -285,7 +290,7 @@ The price feed is currently categorized as a "[Medium Market Risk](https://docs.
 
 According to Dex Guru, liquidity distribution has diversified slightly over seven days (April 4th, 2024 - May 2nd, 2024) 5 days saw an average distribution ratio of Curve 76%: Uniswap 17%: Balancer 5%. The remaining 2 days presented a more narrow split between Curve 94% and Balancer 6%. 
 
-![DEX guru Token Liquidity and Distribution](https://hackmd.io/_uploads/SyHu_ETMR.png)
+![image](https://hackmd.io/_uploads/SJCI3-V7R.png)
 Source: [Dex Guru](https://dex.guru/liquidity/token/eth/0x18084fba666a33d37592fa2633fd49a74dd93a88)
 
 ### 4.3.3 Attack Vectors
