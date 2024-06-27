@@ -1,13 +1,17 @@
-
-![18](https://hackmd.io/_uploads/HyStUbvLR.jpg)
+![image](https://github.com/llama-risk/aave/assets/98047648/039a04ba-ccb3-478d-b4f7-a9b8652271e2)
 
 # LLR-Aave Framework
 
+**Version**: 1.0
+**Last Updated**: July 1st, 2024
+
+**Note:** This live document will be continuously updated and improved over time. Future revisions will incorporate new insights, methodologies, and community feedback to ensure the framework remains current and effective.
+
 ## Introduction
 
-This document outlines our framework for asset onboarding and parameterization for Aave V3. Our approach combines quantitative and qualitative analysis to form a recommendation on whether an asset can be safely onboarded and under what parameters. We place a key focus on qualitative metrics in the context of the dual risk service provider system under Aave, and provide complementary input to the DAO.
+This document outlines our framework for asset onboarding and parameterization for Aave V3. Our approach combines quantitative and qualitative analysis to form a recommendation on whether an asset can be safely onboarded and under what parameters. We place a key focus on qualitative metrics in the context of the dual risk service provider system under Aave and provide complementary input to the DAO.
 
-The framework begins with a review of the (1) **Asset Fundamental Characteristics**. Subsequently, the risk assessment is divided into three categories to form a comprehensive assessment of the proposed asset's overall risk profile: (2) **Market Risk**, (3) **Technological Risk** and (4) **Counterparty Risk**.
+The framework begins with a review of the (1) **Asset Fundamental Characteristics**. Subsequently, the risk assessment is divided into three categories to form a comprehensive evaluation of the proposed asset's overall risk profile: (2) **Market Risk**, (3) **Technological Risk**, and (4) **Counterparty Risk**.
 
 Based on this assessment, (5) **Specific Parameters** are proposed. Our goal is to conduct a thorough analysis, verify claims, and present our findings in a timely and digestible manner for the DAO stakeholders to make informed decisions.
 
@@ -75,20 +79,20 @@ This section outlines the specific parameters for Aave V3 that need to be config
 
 1. **General**
     1.1 **Borrowable** (`ENABLED/DISABLED`): asset can be borrowed.
-    1.2 **Collateral Enabled** (`ENABLED/DISABLED`): asset can be used as collateral.
+    1.2 **Collateral Enabled** (`ENABLED/DISABLED`): The asset can be used as collateral.
     1.3 **Flashloanable** (`ENABLED/DISABLED`): asset can be used for flashloans.
 2. **Caps**
     2.1 **Supply Cap** (`INTEGER`): maximum asset quantity that can be deposited.
     2.2 **Borrow Cap** (`INTEGER`): maximum asset quantity that can be borrowed.
     2.3 **Debt Ceiling** (`INTEGER`): dollar value limit that can be borrowed against the collateral.
 3. **Liquidations**
-    3.1 **LTV** (`INTEGER`): maximum percentage that a borrow position can be openned at against a specific collateral.
+    3.1 **LTV** (`INTEGER`): maximum percentage that a borrow position can be opened against a specific collateral.
     3.2 **LT** (`INTEGER`): percentage at which a position is deemed undercollateralized and can be liquidated
     3.3 **Liquidation Bonus** (`INTEGER`): percentage of liquidation proceeds that goes to the liquidator
     3.4 **Liquidation Protocol Fee** (`INTEGER`): percentage of the liquidation bonus that goes to the protocol.
 4. **Interest rate model**
     4.1 **Uoptimal** (`INTEGER`): optimal utilization percentage, dictates where slope2 starts.
-    4.2 **Base** (`INTEGER`): base interest rate, when utilization is null.
+    4.2 **Base** (`INTEGER`): base interest rate when utilization is null.
     4.3 **Slope1** (`INTEGER`): rate of increase if utilization is below optimal rate.
     4.4 **Slope2** (`INTEGER`): rate of increase if utilization is above optimal.
     4.5 **Reserve Factor** (`INTEGER`): percentage of interest generated that goes to the protocol.
@@ -96,20 +100,26 @@ This section outlines the specific parameters for Aave V3 that need to be config
     5.1 **Isolation Mode** (`ENABLED/DISABLED`): collateral can only be used to borrow stablecoin.
     5.2 **Borrowed in Isolation**  (`ENABLED/DISABLED`): enable stablecoin to be borrowed from isolation mode.
 6. **E-Mode**
-    6.1 **E-Mode category**  (`CATEGORY NAME`): categorizes correlated assets allowing more aggresive parameters for higher capital efficiency.
+    6.1 **E-Mode category**  (`CATEGORY NAME`): categorizes correlated assets, allowing more aggressive parameters for higher capital efficiency.
 
 ### Parameter Considerations
 
-* **Recursive looping**: When an asset can be both borrowed and used as collateral, it enables recursive looping (also known as leveraged yield farming or folding) - a DeFi strategy that maximizes returns by repeatedly borrowing and lending the same asset. The maximum leverage achievable is given by the formula: `Maximum Leverage = 1 / (1 - LTV)` where LTV is the Loan-to-Value ratio expressed as a decimal.
+* **Recursive looping**: When an asset can be borrowed and used as collateral, it enables recursive looping (also known as leveraged yield farming or folding). This DeFi strategy maximizes returns by repeatedly borrowing and lending the same asset. The formula gives the maximum leverage achievable: `Maximum Leverage = 1 / (1 - LTV)`, where LTV is the Loan-to-Value ratio expressed as a decimal.
 * **Supply and borrow caps**: 
-  - Supply cap should be calibrated to ensure sufficient on-chain liquidity for potential liquidations. We concur with Chaos Labs' recommendation of using twice the available liquidity within the liquidation bonus price impact as a baseline metric. Our methodology expands on this approach by incorporating historical liquidity trends and simulated market stress scenarios to provide a comprehensive assessment of appropriate supply cap levels.
+  - Supply cap should be calibrated to ensure sufficient on-chain liquidity for potential liquidations. We concur with Chaos Labs' recommendation to use twice the available liquidity within the liquidation bonus price impact as a baseline metric. Our methodology expands on this approach by incorporating historical liquidity trends and simulated market stress scenarios to assess appropriate supply cap levels comprehensively.
   - The borrow cap should be a portion of the supply cap. By using uOptimal to derive the borrow cap, the protocol ensures there are idle assets if the supply cap has been reached.
 * **Liquidations**: 
-  - Liquidation bonus needs to be high enough to incentivize liquidators, considering factors such as gas fees, asset volatility, and the risk of bridging collateral. The liquidation bonus should be a function of the asset's volatility, with higher bonuses for more volatile assets to compensate for the increased risk taken by liquidators.
-  - LTV ratio dictates how much leverage users can take when engaging in recursive looping. A higher LTV allows for more leverage but also increases the risk of liquidation.
+  - Liquidation bonus must be high enough to incentivize liquidators, considering gas fees, asset volatility, and the risk of bridging collateral. The liquidation bonus should be a function of the asset's volatility, with higher bonuses for more volatile assets to compensate for the increased risk taken by liquidators.
+  - LTV ratio dictates how much leverage users can take when engaging in recursive looping. A higher LTV allows for more leverage but also increases liquidation risk.
   - LT (Liquidation Threshold) should have sufficient buffer from LTV to protect users who have opened a position against sudden market fluctuations, reducing the risk of immediate liquidation.
 * **Interest Rate Model (IRM)**:
   - The Aave Interest Rate Model (IRM) is a key component in determining the borrowing and lending rates based on the utilization of an asset. This [IRM calculator](https://www.desmos.com/calculator/10d33ehuhp) helps visualize and simulate different IRM configurations.
   - Goals of the IRM:
-    - Limit rates above the optimal utilization rate to minimize negative user experience impact caused by higher rate volatility when utilization exceeds the optimal ratio.
+    - Limit rates above the optimal utilization rate to minimize the impact of negative user experience caused by higher rate volatility when utilization exceeds the optimal ratio.
     - Reduce rate volatility, which promotes an increase in borrower participation, as it provides a more stable and predictable borrowing environment.
+
+## Change log
+
+| Version | Date | Changes |
+|----------|------|--------|
+| 1.0         | July 1st, 2024    | Initial framework      |
