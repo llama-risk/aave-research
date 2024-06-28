@@ -13,7 +13,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from dotenv import load_dotenv
 
-# Bot setup
 load_dotenv()
 TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
 CHAT_ID = os.getenv('CHAT_ID')
@@ -31,9 +30,8 @@ def save_proposal_data(proposal_data):
         json.dump(proposal_data, f)
 
 def fetch_and_parse(url):
-    # Initialize Selenium WebDriver
     options = webdriver.ChromeOptions()
-
+    options.add_argument("--headless")
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
     driver.implicitly_wait(3)
 
