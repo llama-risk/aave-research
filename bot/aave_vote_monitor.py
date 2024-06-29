@@ -14,8 +14,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 from dotenv import load_dotenv
 
 load_dotenv()
-TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
-CHAT_ID = os.getenv('CHAT_ID')
+TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN_AAVE')
+CHAT_ID = os.getenv('CHAT_ID_AAVE')
 bot = telebot.TeleBot(TELEGRAM_TOKEN, parse_mode='HTML')
 
 def load_proposal_data():
@@ -32,8 +32,10 @@ def save_proposal_data(proposal_data):
 def fetch_and_parse(url):
     options = webdriver.ChromeOptions()
     options.add_argument("--headless")
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options)
-    driver.implicitly_wait(3)
+    driver.implicitly_wait(20)
 
     driver.get(url)
 
