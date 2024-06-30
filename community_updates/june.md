@@ -16,7 +16,7 @@ LlamaRisk presents our June 2024 monthly update, summarizing key activities and 
 - Published [analysis on osETH and Aave-specific considerations](https://github.com/llama-risk/aave-research/blob/main/research/2024-06-29_oseth_analysis.md)
 - Published [GHO explainer article](https://www.llamarisk.com/research/explainer-series-gho-stablecoin) as part of our educational content series
 - Released [LLR-Aave Framework v1.0](https://github.com/llama-risk/aave-research/blob/main/frameworks/aave_v3_framework.md) for asset onboarding and parameterization
-- ==@todo: sUSD research==
+- Published [Additional notes on Ethena and sUSDe](https://governance.aave.com/t/arfc-onboard-susde-to-aave-v3-on-ethereum/17191/11?u=llamarisk)
 - Expanded team capacity by onboarding an additional full-time analyst 
 - Developed internal tooling to monitor governance forum, Snapshot votes, and market parameters
 
