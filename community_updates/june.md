@@ -26,5 +26,6 @@ LlamaRisk presents our June 2024 monthly update, summarizing key activities and 
 - Attend EthCC to engage with Aave community members, delegates, and ecosystem partners
 - Continue educational explainer article series (parametization, oracle, liquidation, irm)
 - Conduct research on tradeoffs of using market vs. exchange rates
+- Monitor ongoing loyalty (points) programs and analyze their implications for listed assets in Aave
 
 We welcome community feedback and suggestions. Please share any questions, ideas, or areas where you would like to see increased focus from the LlamaRisk team.
