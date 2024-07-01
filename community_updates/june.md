@@ -13,12 +13,12 @@ LlamaRisk presents our June 2024 monthly update, summarizing key activities and 
     - [Onboard USDC.e to Aave V3 Gnosis Chain](https://governance.aave.com/t/arfc-onboard-usdc-e-to-aave-v3-gnosis-chain/17948/2?u=llamarisk)  
     - [Deploy Aave on zkSync](https://governance.aave.com/t/arfc-deployment-of-aave-on-zksync/17937/8?u=llamarisk)
     - [Onboard artMETIS to Aave V3 on Metis](https://governance.aave.com/t/arfc-onboard-artmetis-to-aave-v3-on-metis-market/18079/2?u=llamarisk)
-- Published [analysis on osETH and Aave-specific considerations](https://github.com/llama-risk/aave-research/blob/main/research/2024-06-29_oseth_analysis.md)
-- Published [GHO explainer article](https://www.llamarisk.com/research/explainer-series-gho-stablecoin) as part of our educational content series
+- Published [analysis on osETH and Aave-specific considerations](https://governance.aave.com/t/arfc-onboard-oseth-to-aave-v3-on-ethereum/16913/9?u=llamarisk)
+- Published [GHO explainer article](https://www.llamarisk.com/research/explainer-series-gho-stablecoin) and [twitter thread](https://x.com/LlamaRisk/status/1802849294149722394) as part of our educational content series
+- Published [Additional notes on Ethena and sUSDe](https://governance.aave.com/t/arfc-onboard-susde-to-aave-v3-on-ethereum/17191/11?u=llamarisk), including simulations on reserve fund decay
 - Released [LLR-Aave Framework v1.0](https://github.com/llama-risk/aave-research/blob/main/frameworks/aave_v3_framework.md) for asset onboarding and parameterization
-- Published [Additional notes on Ethena and sUSDe](https://governance.aave.com/t/arfc-onboard-susde-to-aave-v3-on-ethereum/17191/11?u=llamarisk)
 - Expanded team capacity by onboarding an additional full-time analyst 
-- Developed internal tooling to monitor governance forum, Snapshot votes, and market parameters
+- Developed internal tooling to monitor governance forum posts, snapshot votes, and market parameters
 
 ## Upcoming Focus Areas
 
