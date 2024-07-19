@@ -2,8 +2,8 @@
 
 # LLR-Aave Framework
 
-**Version**: 1.0
-**Last Updated**: July 1st, 2024
+**Version**: 1.1
+**Last Updated**: July 17, 2024
 
 **Note:** This live document will be continuously updated and improved over time. Future revisions will incorporate new insights, methodologies, and community feedback to ensure the framework remains current and effective.
 
@@ -15,25 +15,44 @@ The framework begins with a review of the (1) **Asset Fundamental Characteristic
 
 Based on this assessment, (5) **Specific Parameters** are proposed. Our goal is to conduct a thorough analysis, verify claims, and present our findings in a timely and digestible manner for the DAO stakeholders to make informed decisions.
 
+Depending on the asset under review, the structure of our reports might slightly change.
+
 ## 1. Asset Fundamental Characteristics
+
 - **Description**: Evaluate the fundamental characteristics of the asset, including its purpose, utility, and value proposition.
 - **Metrics**:
   - Token type (e.g., utility token, governance token, stablecoin, LST/LRT)
   - Underlying blockchain (e.g., Ethereum, Polygon, Avalanche) and bridge support
   - System architecture
   - Tokenomics, incentives, and sustainability
+    
+### 1.1 Asset
+
+### 1.2 Architecture
+
+### 1.3 Tokenomics
 
 ## 2. Market Risk
+
 - **Description**: Assess the asset's market-related risks, considering liquidity, volatility, and market depth.
 - **Metrics**:
   - Liquidity (e.g., trading volume, liquidity pools, bid-ask spread)
   - Volatility (e.g., price volatility, historical price movements)
   - Trading pairs and exchanges (e.g., centralized and decentralized exchanges)
   - Holders and growth trends
+    
+### 2.1 Liquidity
+
+### 2.2 Volatility
+
+### 2.3 Exchanges
+
+### 2.4 Growth
 
 ## 3. Technological Risk
 
 ### 3.1 Smart Contract Risk
+
 - **Description**: Evaluate the security and reliability of the asset's smart contract code, considering audits, code quality, and potential vulnerabilities.
 - **Metrics**:
   - Audits (e.g., number of audits, reputation of auditing firms)
@@ -42,6 +61,7 @@ Based on this assessment, (5) **Specific Parameters** are proposed. Our goal is 
   - Contract upgradability (e.g., proxy patterns, governance mechanisms)
 
 ### 3.2 Price Feed Risk
+
 - **Description**: Assess the reliability and robustness of the asset's price feed mechanisms.
 - **Metrics**:
   - Price feed sources (e.g., oracles, exchanges, on-chain data)
@@ -50,6 +70,7 @@ Based on this assessment, (5) **Specific Parameters** are proposed. Our goal is 
   - Potential price manipulation risks
 
 ### 3.3 Dependency Risk
+
 - **Description**: Evaluate the asset's dependencies on external systems or protocols and the associated risks.
 - **Metrics**:
   - External dependencies (e.g., other protocols, infrastructure providers)
@@ -58,6 +79,7 @@ Based on this assessment, (5) **Specific Parameters** are proposed. Our goal is 
 ## 4. Counterparty Risk
 
 ### 4.1 Governance and Regulatory Risk
+
 - **Description**: Assess the governance structure and potential regulatory risks associated with the asset.
 - **Metrics**:
   - Governance model (e.g., centralized, decentralized, multi-sig)
@@ -66,6 +88,7 @@ Based on this assessment, (5) **Specific Parameters** are proposed. Our goal is 
   - Potential regulatory risks (e.g., securities laws, anti-money laundering regulations)
 
 ### 4.2 Access Control Risk
+
 - **Description**: Evaluate the access control mechanisms and privileged roles within the asset's ecosystem.
 - **Metrics**:
   - Access control model (e.g., multi-sig, time-locks, role-based access control)
@@ -117,9 +140,13 @@ This section outlines the specific parameters for Aave V3 that need to be config
   - Goals of the IRM:
     - Limit rates above the optimal utilization rate to minimize the impact of negative user experience caused by higher rate volatility when utilization exceeds the optimal ratio.
     - Reduce rate volatility, which promotes an increase in borrower participation, as it provides a more stable and predictable borrowing environment.
+* **eMode consideration**:
+  - To consider enabling eMode on a pegged asset, the asset must demonstrate a strong and reliable peg over several months (ideally >6 months) and ample liquidity.
+  - eMode is fundamentally riskier than other options. It enables recursive looping which can amplify depegs.
 
 ## Change log
 
 | Version | Date | Changes |
 |----------|------|--------|
 | 1.0         | July 1st, 2024    | Initial framework      |
+| 1.1         | July 17, 2024    | Add sub-sections     |
