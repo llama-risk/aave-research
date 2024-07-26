@@ -59,6 +59,7 @@ Depending on the asset under review, the structure of our reports might slightly
   - Code quality (e.g., code complexity, test coverage, documentation)
   - Potential vulnerabilities (e.g., known issues, attack vectors)
   - Contract upgradability (e.g., proxy patterns, governance mechanisms)
+  - Presence of a bug bounty program (eligibility, coverage, amount vs. protocol TVL)
 
 ### 3.2 Price Feed Risk
 
