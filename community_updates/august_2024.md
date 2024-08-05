@@ -10,6 +10,7 @@ LlamaRisk presents our August 2024 monthly update, summarizing key activities an
 * https://governance.aave.com/t/arfc-deploy-an-etherfi-stablecoin-aave-v3-instance/18440/3?u=llamarisk
 * https://governance.aave.com/t/bgd-aave-safety-module-umbrella/18366/9?u=llamarisk
 * https://governance.aave.com/t/temp-check-aavenomics-update/18379/17?u=llamarisk
+* https://www.llamarisk.com/research/aave-irm
 
 ## Upcoming Focus Areas
 [todo]
