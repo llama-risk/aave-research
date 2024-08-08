@@ -11,6 +11,8 @@ LlamaRisk presents our August 2024 monthly update, summarizing key activities an
 * https://governance.aave.com/t/bgd-aave-safety-module-umbrella/18366/9?u=llamarisk
 * https://governance.aave.com/t/temp-check-aavenomics-update/18379/17?u=llamarisk
 * https://www.llamarisk.com/research/aave-irm
+* https://governance.aave.com/t/arfc-remove-frax-from-isolation-mode-and-onboard-sfrax-to-aave-v3-mainnet/18506/5?u=llamarisk
+* https://governance.aave.com/t/arfc-onboard-wsteth-to-aave-v3-on-bnb-chain/18501/2?u=llamarisk (looked into, no liq)
 
 ## Upcoming Focus Areas
 [todo]
