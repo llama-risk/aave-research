@@ -15,6 +15,7 @@ LlamaRisk presents our August 2024 monthly update, summarizing key activities an
 * https://governance.aave.com/t/arfc-onboard-wsteth-to-aave-v3-on-bnb-chain/18501/2?u=llamarisk (looked into, no liq)
 * https://governance.aave.com/t/arfc-deploy-an-ethena-aave-v3-instance/18572/2?u=llamarisk
 * https://governance.aave.com/t/chaos-labs-wbtc-bitgo-custody-update/18607/5?u=llamarisk
+* https://governance.aave.com/t/arfc-onboard-steaklrt-to-aave-v3-lido-instance/18613/2?u=llamarisk
 
 ## Upcoming Focus Areas
 [todo]
