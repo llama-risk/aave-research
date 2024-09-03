@@ -37,7 +37,7 @@ LlamaRisk presents our August 2024 monthly update, summarizing key activities an
 
 ## Upcoming Focus Areas
 
-The main priority is to conclude our assessment and make recommendations for the WBTC custody changes. The proposed BUILD GSM integration with Blackrock is also a key area of interest; we are exploring the legal implications and opportunities for growth integrating RWAs.  
+The main priority is to conclude our assessment and make recommendations for the WBTC custody changes. The proposed BUILD GSM integration with BlackRock is also a key area of interest; we are exploring the legal implications and opportunities for growth integrating RWAs.  
 
 Other areas of research include:
 - GHO user analytics: researching the user profile of GHO to gain insights into adoption trends, collateral usage, user portfolios, and cross-protocol activity  
