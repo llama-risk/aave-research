@@ -37,13 +37,14 @@ LlamaRisk presents our August 2024 monthly update, summarizing key activities an
 
 ## Upcoming Focus Areas
 
-Main priority for us in the coming month will be to conclude our assessment and recommendation with regards to the WBTC custody changes. The proposed BUILD GSM integration with Blackrock is also a key area of interest, we are exploring the legal implications and opportunities for growth integrating RWAs.  
+The main priority is to conclude our assessment and make recommendations for the WBTC custody changes. The proposed BUILD GSM integration with Blackrock is also a key area of interest; we are exploring the legal implications and opportunities for growth integrating RWAs.  
 
-Other areas of research includes:
+Other areas of research include:
 - GHO user analytics: researching the user profile of GHO to gain insights into adoption trends, collateral usage, user portfolios, and cross-protocol activity  
 - Tooling for historical slippage at different swap sizes
-- Research on safe level of asset-specific capitalization for umbrella 
+- Research on the safe level of asset-specific capitalization for umbrella 
 - Slashing simulation, which we intend to open-source
+- Monitor bot for RWA redemption buffer
 - Further research on supply cap limits (l2 concentration) and usage of cross-chain liquidity for liquidations
 
 We welcome community feedback and suggestions. Please share any questions, ideas, or areas where you would like increased focus from the LlamaRisk team.
