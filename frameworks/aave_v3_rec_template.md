@@ -58,3 +58,7 @@
 | Uoptimal                  |                |
 
 **Note**: This assessment follows the LLR-Aave Framework, a comprehensive methodology for asset onboarding and parameterization in Aave V3. This framework is continuously updated and [available here](https://github.com/llama-risk/aave-research/blob/main/frameworks/aave_v3_framework.md).
+
+### Disclaimer
+
+This review was independently prepared by LlamaRisk, a community-led non-profit decentralized organization funded in part by the Aave DAO. LlamaRisk is not directly affiliated with the {name} protocol and did not receive any compensation from {name} for this assessment.
