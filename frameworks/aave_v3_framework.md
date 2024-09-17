@@ -126,6 +126,10 @@ This section outlines the specific parameters for Aave V3 that need to be config
 6. **E-Mode**
     6.1 **E-Mode category**  (`CATEGORY NAME`): categorizes correlated assets, allowing more aggressive parameters for higher capital efficiency.
 
+## 6. Price feed
+
+Recommend a price feed for this asset on Aave (internal exchange rate vs external market rate vs CAPO). If CAPO is recommended, we should propose CAPO-specific parameters as well (`maxYearlyGrowthPercent` and `minimumSnapshotDelay`).
+
 ### Parameter Considerations
 
 * **Recursive looping**: When an asset can be borrowed and used as collateral, it enables recursive looping (also known as leveraged yield farming or folding). This DeFi strategy maximizes returns by repeatedly borrowing and lending the same asset. The formula gives the maximum leverage achievable: `Maximum Leverage = 1 / (1 - LTV)`, where LTV is the Loan-to-Value ratio expressed as a decimal.

@@ -57,6 +57,8 @@
 | Variable Slope 2          |                |
 | Uoptimal                  |                |
 
+## 6. Price feed
+
 **Note**: This assessment follows the LLR-Aave Framework, a comprehensive methodology for asset onboarding and parameterization in Aave V3. This framework is continuously updated and [available here](https://github.com/llama-risk/aave-research/blob/main/frameworks/aave_v3_framework.md).
 
 ### Disclaimer
