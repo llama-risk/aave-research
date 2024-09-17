@@ -126,7 +126,9 @@ This section outlines the specific parameters for Aave V3 that need to be config
 6. **E-Mode**
     6.1 **E-Mode category**  (`CATEGORY NAME`): categorizes correlated assets, allowing more aggressive parameters for higher capital efficiency.
 
-In addition to those parameters, we should propose a price feed for this asset on Aave (internal exchange rate vs external market rate vs CAPO). If CAPO is recommended, we should propose CAPO-specific parameters as well (`maxYearlyGrowthPercent` and `minimumSnapshotDelay`).
+## 6. Price feed
+
+Recommend a price feed for this asset on Aave (internal exchange rate vs external market rate vs CAPO). If CAPO is recommended, we should propose CAPO-specific parameters as well (`maxYearlyGrowthPercent` and `minimumSnapshotDelay`).
 
 ### Parameter Considerations
 
