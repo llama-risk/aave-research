@@ -4,39 +4,48 @@ import re
 import requests
 import telebot
 from dotenv import load_dotenv
+from datetime import datetime
 
-# Bot setup
 load_dotenv()
 TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
 CHAT_ID = os.getenv('CHAT_ID')
 bot = telebot.TeleBot(TELEGRAM_TOKEN, parse_mode='HTML')
 
-def load_processed_ids():
-    if os.path.exists('processed_ids.json'):
-        with open('processed_ids.json', 'r') as f:
-            return json.load(f)
+iso_8601 = '%Y-%m-%dT%H:%M:%S.%fZ'
+
+def load_last_processed_timestamp():
+    if os.path.exists('last_processed_timestamp'):
+        with open('last_processed_timestamp', 'r') as f:
+            return datetime.strptime(f.read().strip(), iso_8601)
     else:
-        return []
+        return datetime.min
 
-def save_processed_ids(processed_ids):
-    with open('processed_ids.json', 'w') as f:
-        json.dump(processed_ids, f)
+def save_last_processed_timestamp(last_processed_timestamp):
+    with open('last_processed_timestamp', 'w') as f:
+        # export to ISO 8601 (microsecond to millisecond truncation)
+        f.write(last_processed_timestamp.strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3] + "Z")
 
-def check_new_topics(url, processed_ids):
-    response = requests.get(url)
-    data = response.json()
+def check_new_topics(url, last_processed_timestamp):
 
+    data = requests.get(url).json()
     for topic in data['latest_posts']:
-        print("checking", topic)
+
+        topic_timestamp = datetime.strptime(topic['created_at'], iso_8601)
+
+        if topic_timestamp <= last_processed_timestamp:
+            break # break since list is ordered by decreasing timestamp
+
         topic_id = topic['topic_id']
-        if topic_id not in processed_ids and re.search(r'\[?ARFC\]?|\[?TEMP CHECK\]?', topic['topic_title'], re.IGNORECASE):
-            print("MATCH")
+        print("checking topic ID " + str(topic_id) + " at " + topic['created_at'])
+
+        last_processed_timestamp = topic_timestamp
+        if re.search(r'\[?ARFC\]?|\[?TEMP CHECK\]?', topic['topic_title'], re.IGNORECASE):
+            print("MATCH for topic ID " + str(topic_id))
             title = topic['topic_title']
             link = f"https://governance.aave.com/t/{topic_id}"
             send_alert(title, link)
-            processed_ids.append(topic_id)
 
-    save_processed_ids(processed_ids)
+    save_last_processed_timestamp(last_processed_timestamp)
 
 def send_alert(title, link):
     message = f"New topic alert:\n\nTitle: {title}\nLink: {link}"
@@ -49,9 +58,9 @@ def send_alert(title, link):
             print(f"Error sending message: {str(e)}")
 
 def main():
-    processed_ids = load_processed_ids()
+    last_processed_timestamp = load_last_processed_timestamp()
     url = "https://governance.aave.com/posts.json"
-    check_new_topics(url, processed_ids)
+    check_new_topics(url, last_processed_timestamp)
 
 if __name__ == '__main__':
     main()
