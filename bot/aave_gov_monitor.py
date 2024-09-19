@@ -7,8 +7,8 @@ from dotenv import load_dotenv
 from datetime import datetime
 
 load_dotenv()
-TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
-CHAT_ID = os.getenv('CHAT_ID')
+TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN_AAVE')
+CHAT_ID = os.getenv('CHAT_ID_AAVE')
 bot = telebot.TeleBot(TELEGRAM_TOKEN, parse_mode='HTML')
 
 iso_8601 = '%Y-%m-%dT%H:%M:%S.%fZ'
@@ -27,8 +27,8 @@ def save_last_processed_timestamp(last_processed_timestamp):
 
 def check_new_topics(url, last_processed_timestamp):
 
-    data = requests.get(url).json()
-    for topic in data['latest_posts']:
+    latest_posts = requests.get(url).json()['latest_posts']
+    for topic in latest_posts:
 
         topic_timestamp = datetime.strptime(topic['created_at'], iso_8601)
 
@@ -38,19 +38,23 @@ def check_new_topics(url, last_processed_timestamp):
         topic_id = topic['topic_id']
         print("checking topic ID " + str(topic_id) + " at " + topic['created_at'])
 
-        last_processed_timestamp = topic_timestamp
-        if re.search(r'\[?ARFC\]?|\[?TEMP CHECK\]?', topic['topic_title'], re.IGNORECASE):
-            print("MATCH for topic ID " + str(topic_id))
-            title = topic['topic_title']
-            link = f"https://governance.aave.com/t/{topic_id}"
-            send_alert(title, link)
+        if topic['post_number'] != 1:
+            continue # ignore if post is a reply
 
-    save_last_processed_timestamp(last_processed_timestamp)
+        if not re.search(r'\[?ARFC\]?|\[?TEMP CHECK\]?', topic['topic_title'], re.IGNORECASE):
+            continue # ignore if post is not ARFC or TEMP_CHECK
+
+        print("MATCH for topic ID " + str(topic_id))
+        title = topic['topic_title']
+        link = f"https://governance.aave.com/t/{topic_id}"
+        send_alert(title, link)
+
+    save_last_processed_timestamp(datetime.strptime(latest_posts[0]['created_at'], iso_8601))
 
 def send_alert(title, link):
     message = f"New topic alert:\n\nTitle: {title}\nLink: {link}"
     try:
-        bot.send_message(CHAT_ID, message)
+        bot.send_message(CHAT_ID, message, disable_web_page_preview=True)
     except telebot.apihelper.ApiTelegramException as e:
         if e.error_code == 429:
             print("Too Many Requests. Skipping and continuing...")
