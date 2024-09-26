@@ -17,9 +17,8 @@ AAVE_GOVERNANCE_URL = 'https://governance.aave.com/posts.json'
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN_AAVE')
 GITHUB_GRAPHQL_URL = 'https://api.github.com/graphql'
 
-GITHUB_REPOSITORY = "R_kgDOLAvu8g" # 'tasks-hub' repository
-GITHUB_PROJECT = "PVT_kwDOCSIUVc4Aadu6" # 'project-mngt' project
-GITHUB_AAVE_LABEL_ID = "LA_kwDOLAvu8s8AAAABmwKX8A" # 'Aave' label 
+GITHUB_REPOSITORY = "R_kgDOMl-plw" # 'aave-private' repository
+GITHUB_PROJECT = "PVT_kwDOCSIUVc4Ao7mq" # 'aave' project
 
 GITHUB_HEADER = {
     "Authorization": f"Bearer {GITHUB_TOKEN}",
@@ -80,12 +79,11 @@ def publish_to_telegram_channel(chat_id, message):
             print(f"error sending message: {str(e)}")
 
 GITHUB_ADD_ISSUE_TO_REPO_QUERY = """
-    mutation($repositoryId: ID!, $title: String!, $body: String!, $labelIds: [ID!]) {
+    mutation($repositoryId: ID!, $title: String!, $body: String!) {
       createIssue(input: {
         repositoryId: $repositoryId, 
         title: $title, 
-        body: $body, 
-        labelIds: $labelIds
+        body: $body
       }) {
         issue {
           id
@@ -101,8 +99,7 @@ def create_github_issue(repo_id, issue_title, issue_body):
         "variables": {
             "repositoryId": repo_id,
             "title": issue_title,
-            "body": issue_body,
-            "labelIds": [GITHUB_AAVE_LABEL_ID]
+            "body": issue_body
         }
     }))
 
@@ -145,85 +142,15 @@ GITHUB_UPDATE_PROJECT_ITEM_QUERY = """
     mutation(
         $projectId: ID!, 
         $projectItemId: ID!, 
-        $statusFieldId: ID!, 
-        $statusOptionId: String!,
-        $sizeFieldId: ID!, 
-        $sizeOptionId: String!,
-        $estimateFieldId: ID!, 
-        $estimateValue: Float!,
-        $startDateFieldId: ID!,
-        $startDateValue: Date!,
-        $endDateFieldId: ID!,
-        $endDateValue: Date!,
-        $priorityFieldId: ID!, 
-        $priorityOptionId: String!
+        $classFieldId: ID!, 
+        $classOptionId: String!
     ) {
         # Update Status
         updateStatus: updateProjectV2ItemFieldValue(input: {
             projectId: $projectId, 
             itemId: $projectItemId, 
             fieldId: $statusFieldId, 
-            value: {singleSelectOptionId: $statusOptionId}
-            }) {
-            projectV2Item {
-              id
-            }
-        }
-
-        # Update Size
-        updateSize: updateProjectV2ItemFieldValue(input: {
-            projectId: $projectId, 
-            itemId: $projectItemId, 
-            fieldId: $sizeFieldId, 
-            value: {singleSelectOptionId: $sizeOptionId}
-            }) {
-            projectV2Item {
-              id
-            }
-        }
-
-        # Update Estimate
-        updateEstimate: updateProjectV2ItemFieldValue(input: {
-            projectId: $projectId, 
-            itemId: $projectItemId, 
-            fieldId: $estimateFieldId, 
-            value: {number: $estimateValue}
-            }) {
-            projectV2Item {
-              id
-            }
-        }
-
-        # Update Start Date
-        updateStartDate: updateProjectV2ItemFieldValue(input: {
-            projectId: $projectId, 
-            itemId: $projectItemId, 
-            fieldId: $startDateFieldId, 
-            value: {date: $startDateValue}
-            }) {
-            projectV2Item {
-              id
-            }
-        }
-
-        # Update End Date
-        updateEndDate: updateProjectV2ItemFieldValue(input: {
-            projectId: $projectId, 
-            itemId: $projectItemId, 
-            fieldId: $endDateFieldId, 
-            value: {date: $endDateValue}
-            }) {
-            projectV2Item {
-              id
-            }
-        }
-
-        # Update Priority
-        updatePriority: updateProjectV2ItemFieldValue(input: {
-            projectId: $projectId, 
-            itemId: $projectItemId, 
-            fieldId: $priorityFieldId, 
-            value: {singleSelectOptionId: $priorityOptionId}
+            value: {singleSelectOptionId: $classOptionId}
             }) {
             projectV2Item {
               id
@@ -231,7 +158,14 @@ GITHUB_UPDATE_PROJECT_ITEM_QUERY = """
         }
     }"""
 
-def update_project_item(project_id, project_item_id):
+def update_project_item(project_id, project_item_id, prefix):
+
+    if prefix == "[ARFC]":
+        classOptionId = "596877b0"
+    elif prefix == "[TEMP_CHECK]":
+        classOptionId = "23b48dd6"
+    else: # default to 'Research'
+        classOptionId = "4cf134c2"
 
     today = datetime.today()
     in_5_days = today + timedelta(days=5)
@@ -241,18 +175,8 @@ def update_project_item(project_id, project_item_id):
         "variables": {
             "projectId": project_id,
             "projectItemId": project_item_id,
-            "statusFieldId": "PVTSSF_lADOCSIUVc4Aadu6zgQ-WXk",  # 'Status' field ID
-            "statusOptionId": "08afe404",  # Status 'Scheduled' option ID
-            "sizeFieldId": "PVTSSF_lADOCSIUVc4Aadu6zgQ-Was",  # 'Size' field ID
-            "sizeOptionId": "9728cbdc",  # Size 'M' option ID
-            "estimateFieldId": "PVTF_lADOCSIUVc4Aadu6zgQ-Waw",  # 'Estimate' field ID
-            "estimateValue": 2.0,  # Estimate as a number (2)
-            "startDateFieldId": "PVTF_lADOCSIUVc4Aadu6zgQ-Wa4",  # 'Start date' field ID
-            "startDateValue": today.strftime('%Y-%m-%d'),
-            "endDateFieldId": "PVTF_lADOCSIUVc4Aadu6zgQ-Wa8",  # 'End date' field ID
-            "endDateValue": in_5_days.strftime('%Y-%m-%d'),
-            "priorityFieldId": "PVTSSF_lADOCSIUVc4Aadu6zgQ-Wao",  # 'Priority' field ID
-            "priorityOptionId": "79628723"  # Priority 'P0' option ID
+            "classFieldId": "PVTSSF_lADOCSIUVc4Ao7mqzggbSCc",  # 'Class' field ID
+            "classOptionId": classOptionId
         }
     }))
 
@@ -277,7 +201,7 @@ def main():
         if project_item_id == 0:
             continue
 
-        update_project_item(GITHUB_PROJECT, project_item_id)
+        update_project_item(GITHUB_PROJECT, project_item_id, post['title'].split(" ")[0])
         
     save_last_processed_timestamp(last_processed_timestamp)
 
