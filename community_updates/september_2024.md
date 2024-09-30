@@ -32,7 +32,7 @@ LlamaRisk presents our September 2024 monthly update, summarizing key activities
 
 ## Upcoming Focus Areas
   * Progressing with research on using GHO for liquidations and comparing CCIP vs. OFT
-  * Preparing the proposal for our renewed engagement
+  * Preparing to present the DAO with a proposal to renew our risk provider engagement
   * Further monitoring and analysis of the WBTC transition process with BitGo and BitGlobal
 
 We welcome community feedback and suggestions. Please share any questions, ideas, or areas where you would like increased focus from the LlamaRisk team.
