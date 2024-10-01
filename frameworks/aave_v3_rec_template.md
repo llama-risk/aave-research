@@ -63,6 +63,6 @@
 
 ### Disclaimer
 
-This review was independently prepared by LlamaRisk, a community-led non-profit decentralized organization funded in part by the Aave DAO. LlamaRisk is not directly affiliated with the {name} protocol and did not receive any compensation from {name} for this assessment. 
+This review was independently prepared by LlamaRisk, a community-led non-profit decentralized organization funded in part by the Aave DAO. LlamaRisk is not directly affiliated with the protocol(s) reviewed in this assessment and did not receive any compensation from the protocol(s) or their affiliated entities for this work.
 
 The information provided should not be construed as legal, financial, tax, or professional advice.
