@@ -22,16 +22,16 @@ LlamaRisk presents our September 2024 monthly update, summarizing key activities
   * [Conducted research on GHO users' interactions and patterns, providing insights for future development](https://gho.llamarisk.com/posts/gho-users/)
   * [Published a deep-dive research report on Chainlink CCIP integration with Aave for cross-chain expansion of GHO](https://www.llamarisk.com/research/explainer-series-ccip)
   * [Assessed the impact of high supply concentration of LSTs on Base and Scroll networks](https://governance.aave.com/t/arfc-remove-community-preference-for-supply-cap-limits/19009/2?u=llamarisk)
-  * Continued clarification with BitGo and established communication with BitGlobal regarding the WBTC transition
+  * Continued due diligence with BitGo and established communication with BitGlobal regarding the WBTC transition
   * Ongoing analysis of LST oracle comparison (not yet published)
 
 * Community Engagement:
   * [Participated in a live stream on September 20, 2024: "LlamaRisk Tackles WBTC](https://x.com/i/broadcasts/1gqxvNMdgMOxB)
   * Engaged with delegates to gather feedback on recent parameter adjustments and research outputs
-  * In discussions with Chainlink to join a task force on RWA integration
+  * In discussions with Chainlink to join a RWA integration task force
 
 ## Upcoming Focus Areas
-  * Progressing with research on using GHO for liquidations and comparing CCIP vs. OFT
+  * Progressing with research on using GHO for liquidations and comparative analysis of CCIP and OFT
   * Preparing to present the DAO with a proposal to renew our risk provider engagement
   * Further monitoring and analysis of the WBTC transition process with BitGo and BitGlobal
 
