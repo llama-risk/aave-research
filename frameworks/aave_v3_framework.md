@@ -59,9 +59,13 @@ Depending on the asset under review, the structure of our reports might slightly
   - Code quality (e.g., code complexity, test coverage, documentation)
   - Potential vulnerabilities (e.g., known issues, attack vectors)
   - Contract upgradability (e.g., proxy patterns, governance mechanisms)
+
+### 3.2 Bug bounty program
+- **Description**: Confirm the presence of a bug bounty program.
+- **Metrics**:
   - Presence of a bug bounty program (eligibility, coverage, amount vs. protocol TVL)
 
-### 3.2 Price Feed Risk
+### 3.3 Price Feed Risk
 
 - **Description**: Assess the reliability and robustness of the asset's price feed mechanisms.
 - **Metrics**:
@@ -70,7 +74,7 @@ Depending on the asset under review, the structure of our reports might slightly
   - Historical price feed accuracy and reliability
   - Potential price manipulation risks
 
-### 3.3 Dependency Risk
+### 3.4 Dependency Risk
 
 - **Description**: Evaluate the asset's dependencies on external systems or protocols and the associated risks.
 - **Metrics**:
