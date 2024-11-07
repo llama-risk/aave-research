@@ -24,9 +24,11 @@
 
 ### 3.1 Smart Contract Risk
 
-### 3.2 Price Feed Risk
+### 3.2 Bug bounty program
 
-### 3.3 Dependency Risk
+### 3.3 Price Feed Risk
+
+### 3.4 Dependency Risk
 
 ## 4. Counterparty Risk
 
