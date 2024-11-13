@@ -165,3 +165,4 @@ Recommend a price feed for this asset on Aave (internal exchange rate vs externa
 |----------|------|--------|
 | 1.0         | July 1st, 2024    | Initial framework      |
 | 1.1         | July 17, 2024    | Add sub-sections     |
+| 1.2        | Nov 13, 2024    | Add details on 2.1 and 2.2     |
