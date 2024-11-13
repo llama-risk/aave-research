@@ -43,7 +43,13 @@ Depending on the asset under review, the structure of our reports might slightly
     
 ### 2.1 Liquidity
 
+- How large a trade size may a user make before greater than 7.5% price impact occur?
+- How concentrated are LPs on DEXs?
+- What incentive mechanisms are used to start / maintain liquidity? 
+
 ### 2.2 Volatility
+- How volatile is the asset?
+- If a pegged asset, is there any sustained (2% for 2 days or more) deviation from collateral value?  
 
 ### 2.3 Exchanges
 
