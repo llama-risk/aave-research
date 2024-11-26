@@ -10,9 +10,15 @@
 
 ### 1.3 Tokenomics
 
+#### 1.3.1 Token Holder Concentration 
+
 ## 2. Market Risk
 
 ### 2.1 Liquidity
+
+#### 2.1.1 Liquidity Venue Concentration
+
+#### 2.1.2 DEX LP Concentration
 
 ### 2.2 Volatility
 
@@ -24,7 +30,7 @@
 
 ### 3.1 Smart Contract Risk
 
-### 3.2 Bug bounty program
+### 3.2 Bug Bounty Program
 
 ### 3.3 Price Feed Risk
 
@@ -35,6 +41,12 @@
 ### 4.1 Governance and Regulatory Risk
 
 ### 4.2 Access Control Risk
+
+#### 4.2.1 Contract Modification Options 
+
+#### 4.2.2 Timelock Duration and Function
+
+#### 4.2.3 Multisig Threshold / Signer identity
 
 **Note**: This assessment follows the LLR-Aave Framework, a comprehensive methodology for asset onboarding and parameterization in Aave V3. This framework is continuously updated and [available here](https://github.com/llama-risk/aave-research/blob/main/frameworks/aave_v3_framework.md).
 
@@ -61,7 +73,7 @@
 | Variable Slope 2          |                |
 | Uoptimal                  |                |
 
-## 6. Price feed
+## 6. Price feed Recommendation 
 
 ### Disclaimer
 
