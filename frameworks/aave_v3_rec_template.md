@@ -1,6 +1,6 @@
-# Summary
+## Summary
 
-# Collateral Risk Assessment
+[details="Collateral Risk Assessment"]
 
 ## 1. Asset Fundamental Characteristics
 
@@ -50,7 +50,9 @@
 
 **Note**: This assessment follows the LLR-Aave Framework, a comprehensive methodology for asset onboarding and parameterization in Aave V3. This framework is continuously updated and [available here](https://github.com/llama-risk/aave-research/blob/main/frameworks/aave_v3_framework.md).
 
-## 5. Aave V3 Specific Parameters
+[/details]
+
+## Aave V3 Specific Parameters
 
 | Parameter                 | Recommendation |
 |---------------------------|----------------|
@@ -73,7 +75,7 @@
 | Variable Slope 2          |                |
 | Uoptimal                  |                |
 
-## 6. Price feed Recommendation 
+## Price feed Recommendation 
 
 ### Disclaimer
 
