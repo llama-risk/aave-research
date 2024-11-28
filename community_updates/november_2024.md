@@ -12,7 +12,7 @@ LlamaRisk presents our November 2024 monthly update, summarizing key activities 
 
 #### Asset onboarding
 
-- [\[ARFC\] Add FBTC to Aave v3 Main Market on Ethereum](https://governance.aave.com/t/arfc-add-fbtc-to-aave-v3-main-market-on-ethereum/19937/2) - Supporting after productive discussions with Ignition team, solid architecture
+- [\[ARFC\] Add FBTC to Aave v3 Main Market on Ethereum](https://governance.aave.com/t/arfc-add-fbtc-to-aave-v3-main-market-on-ethereum/19937/2) - Supporting after productive discussions with Ignition team, noting solid asset architecture
 - [\[ARFC\] Add PAXG to Aave v3 Main Instance on Ethereum](https://governance.aave.com/t/arfc-add-paxg-to-aave-v3-main-instance-on-ethereum/19849/3) - Supporting with noted concerns about 3/20 multisig
 - [\[ARFC\] Add rsETH to Aave V3 Ethereum](https://governance.aave.com/t/arfc-add-rseth-to-aave-v3-ethereum/17696/19) - Revived proposal now feasible with e-modes implementation
 - [\[ARFC\] Chaos Labs - Migrating MKR to SKY on Aave V3 Ethereum Main Market - 10/20/24](https://governance.aave.com/t/arfc-chaos-labs-migrating-mkr-to-sky-on-aave-v3-ethereum-main-market-10-20-24/19540/4)
@@ -27,7 +27,7 @@ LlamaRisk presents our November 2024 monthly update, summarizing key activities 
 
 #### GHO related
 
-A few initiatives from karpatkey_TokenLogic and ACI are support to GHO, which we were happy to review:
+A few initiatives from karpatkey_TokenLogic and ACI are supporting GHO, which we were happy to review:
 
 - [\[ARFC\] Increase wstETH Borrow Rate on Lido Instance](https://governance.aave.com/t/arfc-increase-wsteth-borrow-rate-on-lido-instance/19706/2)
 - [\[ARFC\] Mint & Deploy 10M GHO into Aave v3 Lido Instance](https://governance.aave.com/t/arfc-mint-deploy-10m-gho-into-aave-v3-lido-instance/19700/2)
@@ -58,7 +58,7 @@ A few initiatives from karpatkey_TokenLogic and ACI are support to GHO, which we
 
 - [Chaos Labs' launch of Edge](https://x.com/LlamaRisk/status/1861465216149491958). We would like to congratulate our peer and acknowledge their contribution. We've set up monitoring during the pilot phase to ensure the robots are not misbehaving.
 - [\[TEMP CHECK\] Aave Instances Strategy Shift](https://governance.aave.com/t/temp-check-aave-instances-strategy-shift/19676/2) - we are very much on board with ACI's vision and have signaled we are working on a revised suite of framework to support this initiative.
-- - Initiated outreach to Service Providers and Delegates to gather feedback and improve coordination across the ecosystem
+-  Initiated outreach to Service Providers and Delegates to gather feedback and improve coordination across the ecosystem
 
 ## Upcoming Focus Areas
 
