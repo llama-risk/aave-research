@@ -22,12 +22,12 @@ LlamaRisk presents our November 2024 monthly update, summarizing key activities 
 
 #### New Chain
 
-- [\[ARFC\] Deployment of Aave on Linea](https://governance.aave.com/t/arfc-deployment-of-aave-on-linea/19852/4) - We applied our new Chain Qualification Framework (CQF). Great [technical report](https://governance.aave.com/t/bgd-aave-linea-infrastructure-technical-evaluation/19903) from @bdg and [risk report](https://governance.aave.com/t/arfc-deployment-of-aave-on-linea/19852/6?u=llamarisk) from @chaoslab. There is a marginal level of overlap, although we strongly feel that this benefits the DAO.
+- [\[ARFC\] Deployment of Aave on Linea](https://governance.aave.com/t/arfc-deployment-of-aave-on-linea/19852/4) - We applied our new Chain Qualification Framework (CQF). Great [technical report](https://governance.aave.com/t/bgd-aave-linea-infrastructure-technical-evaluation/19903) from @bgdlabs and [risk report](https://governance.aave.com/t/arfc-deployment-of-aave-on-linea/19852/6?u=llamarisk) from @ChaosLabs. There is a marginal level of overlap, although we strongly feel that this benefits the DAO.
 - [\[TEMP CHECK\] Aave V3 Deployment on the Spiderchain (Botanix Labs)](https://governance.aave.com/t/temp-check-aave-v3-deployment-on-the-spiderchain-botanix-labs/19792/8) - Preliminary review as this chain is yet to be launched and had an intro call with the team and signing an NDA.
 
 #### GHO related
 
-A few initiatives from karpatkey_TokenLogic and ACI are supporting GHO, which we were happy to review:
+A few initiatives from @karpatkey_TokenLogic and @ACI are supporting GHO, which we were happy to review:
 
 - [\[ARFC\] Increase wstETH Borrow Rate on Lido Instance](https://governance.aave.com/t/arfc-increase-wsteth-borrow-rate-on-lido-instance/19706/2)
 - [\[ARFC\] Mint & Deploy 10M GHO into Aave v3 Lido Instance](https://governance.aave.com/t/arfc-mint-deploy-10m-gho-into-aave-v3-lido-instance/19700/2)
@@ -57,12 +57,12 @@ A few initiatives from karpatkey_TokenLogic and ACI are supporting GHO, which we
 
 ### Community Engagement:
 
-- [Chaos Labs' launch of Edge](https://x.com/LlamaRisk/status/1861465216149491958). We want to congratulate our peer and acknowledge their contribution. We've set up monitoring during the pilot phase to ensure the robots are not misbehaving.
-- [\[TEMP CHECK\] Aave Instances Strategy Shift](https://governance.aave.com/t/temp-check-aave-instances-strategy-shift/19676/2) - We are very much on board with ACI's vision and have signaled we are working on a revised suite of framework to support this initiative.
+- @ChaosLabs' [launch of Edge](https://x.com/LlamaRisk/status/1861465216149491958). We want to congratulate our peer and acknowledge their contribution 👏. We've set up monitoring during the pilot phase to ensure the robots are not misbehaving.
+- [\[TEMP CHECK\] Aave Instances Strategy Shift](https://governance.aave.com/t/temp-check-aave-instances-strategy-shift/19676/2) - We are very much on board with @ACI's vision and have signaled we are working on a revised suite of framework to support this initiative.
 -  Initiated outreach to Service Providers and Delegates to gather feedback and improve coordination across the ecosystem
 
 ## Upcoming Focus Areas
 
-- We are working on our Asset Probation Framework and gathering feedback from SPs. This will help establish when and how assets should follow a probationary onboarding track, defining success metrics to monitor while maintaining direct onboarding paths for established assets.
+- We are working on our Asset Probation Framework (APF) and gathering feedback from Service Providers. This will help establish when and how assets should follow a probationary onboarding track, defining success metrics to monitor while maintaining direct onboarding paths for established assets.
 
 We welcome community feedback and suggestions. Please share any questions, ideas, or areas where you would like increased focus from the LlamaRisk team.
