@@ -22,8 +22,8 @@ LlamaRisk presents our November 2024 monthly update, summarizing key activities 
 
 #### New Chain
 
-- [\[ARFC\] Deployment of Aave on Linea](https://governance.aave.com/t/arfc-deployment-of-aave-on-linea/19852/4) - we applied our new Chain Qualification Framework (CQF). Great [technical report](https://governance.aave.com/t/bgd-aave-linea-infrastructure-technical-evaluation/19903) from @bdg and [risk report](https://governance.aave.com/t/arfc-deployment-of-aave-on-linea/19852/6?u=llamarisk) from @chaoslab. There is a marginal level of overlap, although we strongly feel that this benefits the DAO.
-- [\[TEMP CHECK\] Aave V3 Deployment on the Spiderchain (Botanix Labs)](https://governance.aave.com/t/temp-check-aave-v3-deployment-on-the-spiderchain-botanix-labs/19792/8) - preliminary review as this chain is yet to be launched and had an intro call with the team and signing an NDA.
+- [\[ARFC\] Deployment of Aave on Linea](https://governance.aave.com/t/arfc-deployment-of-aave-on-linea/19852/4) - We applied our new Chain Qualification Framework (CQF). Great [technical report](https://governance.aave.com/t/bgd-aave-linea-infrastructure-technical-evaluation/19903) from @bdg and [risk report](https://governance.aave.com/t/arfc-deployment-of-aave-on-linea/19852/6?u=llamarisk) from @chaoslab. There is a marginal level of overlap, although we strongly feel that this benefits the DAO.
+- [\[TEMP CHECK\] Aave V3 Deployment on the Spiderchain (Botanix Labs)](https://governance.aave.com/t/temp-check-aave-v3-deployment-on-the-spiderchain-botanix-labs/19792/8) - Preliminary review as this chain is yet to be launched and had an intro call with the team and signing an NDA.
 
 #### GHO related
 
@@ -48,6 +48,7 @@ A few initiatives from karpatkey_TokenLogic and ACI are supporting GHO, which we
 #### Misc.
 
 - [\[ARFC\] wstETH/WETH Lido Borrow Rate Update](https://governance.aave.com/t/arfc-wsteth-weth-lido-borrow-rate-update/19867/2)
+- [[ARFC] Increase Borrow Slope1 to all Stablecoins across all Aave Instances](https://governance.aave.com/t/arfc-increase-borrow-slope1-to-all-stablecoins-across-all-aave-instances/19979/2?u=llamarisk) - In support to reflect current market rates and improve efficiency.
 
 ### Research and analysis:
 
@@ -56,8 +57,8 @@ A few initiatives from karpatkey_TokenLogic and ACI are supporting GHO, which we
 
 ### Community Engagement:
 
-- [Chaos Labs' launch of Edge](https://x.com/LlamaRisk/status/1861465216149491958). We would like to congratulate our peer and acknowledge their contribution. We've set up monitoring during the pilot phase to ensure the robots are not misbehaving.
-- [\[TEMP CHECK\] Aave Instances Strategy Shift](https://governance.aave.com/t/temp-check-aave-instances-strategy-shift/19676/2) - we are very much on board with ACI's vision and have signaled we are working on a revised suite of framework to support this initiative.
+- [Chaos Labs' launch of Edge](https://x.com/LlamaRisk/status/1861465216149491958). We want to congratulate our peer and acknowledge their contribution. We've set up monitoring during the pilot phase to ensure the robots are not misbehaving.
+- [\[TEMP CHECK\] Aave Instances Strategy Shift](https://governance.aave.com/t/temp-check-aave-instances-strategy-shift/19676/2) - We are very much on board with ACI's vision and have signaled we are working on a revised suite of framework to support this initiative.
 -  Initiated outreach to Service Providers and Delegates to gather feedback and improve coordination across the ecosystem
 
 ## Upcoming Focus Areas
