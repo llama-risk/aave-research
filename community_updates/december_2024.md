@@ -11,25 +11,28 @@ LlamaRisk presents our December 2024 monthly update, summarizing key activities 
 ### Recommendations and inputs:
 
 #### Asset onboarding
-- [\[ARFC\] Add rlUSD to Core Instance](https://governance.aave.com/t/arfc-add-rlusd-to-core-instance/20214/2) - Supporting with noted pending updates on custodial disclosures and attestations. 
+
+- [\[ARFC\] Add rlUSD to Core Instance](https://governance.aave.com/t/arfc-add-rlusd-to-core-instance/20214/2) - Supporting with note pending updates on custodial disclosures and attestations. 
 
 #### New Chain
+
 - [\[ARFC\] Aave V3 Deployment on the Spiderchain (Botanix Labs)](https://governance.aave.com/t/arfc-aave-v3-deployment-on-the-spiderchain-botanix-labs/19978/2) - Supporting based on decentralized Federation plans and upcoming audits.
 
 #### GHO related
+
 Reviewed GHO initiatives by @TokenLogic, @ChaosLabs, 
-@bgdlabs, and @karpatkey_TokenLogic, supporting efforts to enhance GHO liquidity and deployment mechanisms.
+@bgdlabs, and @karpatkey_TokenLogic, supporting efforts to 
+further GHO liquidity and adoption:
 - [\[ARFC\] TokenLogic GHO Stewards - GHO Borrow Rate Update](https://governance.aave.com/t/arfc-tokenlogic-gho-stewards-gho-borrow-rate-update/20424/2)
 - [\[ARFC\] Increase Bucket Capacity of GHO FlashMinter on Ethereum](https://governance.aave.com/t/arfc-increase-bucket-capacity-of-gho-flashminter-on-ethereum/20183/2)
 - [\[ARFC\] BGD. GhoDirectMinter](https://governance.aave.com/t/arfc-bgd-ghodirectminter/20040/3)
 - [\[ARFC\] Aave Liquidity Committee Funding Phase V](https://governance.aave.com/t/arfc-aave-liquidity-committee-funding-phase-v/20043/2)
 
 #### E-modes
-- [\[ARFC\] Proposal to Remove USDS from sUSDe Liquid E-Mode in Aave Prime Instance](https://governance.aave.com/t/arfc-proposal-to-remove-usds-from-susde-liquid-e-mode-in-aave-prime-instance/20264/2) - Supporting with alignment to [previous risk](https://governance.aave.com/t/arfc-temporary-halt-further-susde-cap-increase-and-raise-the-liquidation-penalty/20252) considerations.
+
+- [\[ARFC\] Proposal to Remove USDS from sUSDe Liquid E-Mode in Aave Prime Instance](https://governance.aave.com/t/arfc-proposal-to-remove-usds-from-susde-liquid-e-mode-in-aave-prime-instance/20264/2) - Supporting with alignment to [previous risk](https://governance.aave.com/t/arfc-temporary-halt-further-susde-cap-increase-and-raise-the-liquidation-penalty/20252) considerations (LB from 3% -> 4%).
 - [\[ARFC\] Enable eBTC/WBTC liquid E-Mode on Aave v3 Core Instance](https://governance.aave.com/t/arfc-enable-ebtc-wbtc-liquid-e-mode-on-aave-v3-core-instance/20141/2) - Supporting with noted concerns on collateral exposure and oracle considerations.
 - [\[ARFC\] Enable LBTC/WBTC liquid E-Mode on Aave v3 Core Instance](https://governance.aave.com/t/arfc-enable-lbtc-wbtc-liquid-e-mode-on-aave-v3-core-instance/20142/2) - Supporting while highlighting CubeSigner security concerns and liquidity concentration.
-
-#### Legal Commentary
 
 #### Misc.
 - [\[ARFC\] Aave v3 Gnosis Instance Updates](https://governance.aave.com/t/arfc-aave-v3-gnosis-instance-updates/20334/3) - Highlighted liquidity risks for osGNO and GNO, and opposed sDAI borrowing due to market and operational risks.
@@ -41,14 +44,20 @@ Reviewed GHO initiatives by @TokenLogic, @ChaosLabs,
 - [\[ARFC\] Reduction of Reserve Factor and Slope2 for Stablecoin Markets on Aave V2](https://governance.aave.com/t/arfc-reduction-of-reserve-factor-and-slope2-for-stablecoin-markets-on-aave-v2/20041/2)
 - [\[ARFC\] Increase Borrow Slope1 to all Stablecoins across all Aave Instances](https://governance.aave.com/t/arfc-increase-borrow-slope1-to-all-stablecoins-across-all-aave-instances/19979/2) - Supporting borrow rate stabilization with noted growth-focused risks.
 
-### Research and analysis:
+### Research and analysis
 - [\[ARFC\] Temporary halt further sUSDe cap increase and raise the liquidation penalty](https://governance.aave.com/t/arfc-temporary-halt-further-susde-cap-increase-and-raise-the-liquidation-penalty/20252) - The proposal aimed to halt sUSDe cap increase and raise the liquidation penalty to 4% to address reserve fund concerns. The Ethena team [deposited $10M to the reserve fund](https://etherscan.io/tx/0x81631a1b77f4377b10948b6d1a6b3f2ce2614bd3b51b231acd526bbc9676f192), addressing the capitalization concerns, eliminating the need for further adjustments.
 - [Ethena Reserve Fund Drawdown Methodology V2](https://www.llamarisk.com/research/ethena-drawdown-methodology-v2) - Refined reserve fund methodology for Ethena, which is critical for maintaining USDe's solvency with Aave's sUSDe liquid e-Mode.
 - [Coinbase's MiCA-Driven Stablecoin Restrictions: Aave's Strategic Opening in Europe](https://www.llamarisk.com/research/coinbase-s-mica-driven-stablecoin-restrictions-aave-s-strategic-opening-in-europe) - Highlighted opportunities for Aave DAO to attract users seeking decentralized alternatives.
+- [MPCs in Protocol Treasury and Operational Context](https://www.llamarisk.com/research/mpc-explainer) - Comprehensive analysis of MPC wallets in DeFi, examining their advantages over multisigs, evaluation frameworks, and security best practices for protocol treasury management.
 
-### Community Engagement:
+### Community Engagement
+
 - Continued outreach to Service Providers and Delegates to gather feedback and improve coordination across the ecosystem.
 
 ## Upcoming Focus Areas
+
+We posted a [2024 yearly recap here](https://llamarisk.substack.com/p/llamarisk-yearly-recap-2024), where we highlight our plans for the year. Our engagement and service to Aave DAO remain front and center.
+
+We will continue focusing on key initiatives and delivering outstanding value for the DAO, with efforts to collaborate with other SPs, such as @chaoslabs. An example of this is a joint proposal that will be submitted shortly to facilitate further growth of USDe within Aave while mitigating key risks.
 
 We welcome community feedback and suggestions. Please share any questions, ideas, or areas where you would like increased focus from the LlamaRisk team.
