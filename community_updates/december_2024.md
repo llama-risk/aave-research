@@ -1,5 +1,8 @@
 # LlamaRisk - Monthly Community Update 
 
+![image|914x1280, 50%](upload://nEw9lztFnT2J2IBNpHQ8Rh2UpSi.jpeg)
+
+
 # December 2024
 
 ## Overview
@@ -8,7 +11,7 @@ LlamaRisk presents our December 2024 monthly update, summarizing key activities 
 
 ## Highlights
 
-### Recommendations and inputs:
+### Recommendations and inputs
 
 #### Asset onboarding
 
@@ -58,6 +61,6 @@ further GHO liquidity and adoption:
 
 We posted a [2024 yearly recap here](https://llamarisk.substack.com/p/llamarisk-yearly-recap-2024), where we highlight our plans for the year. Our engagement and service to Aave DAO remain front and center.
 
-We will continue focusing on key initiatives and delivering outstanding value for the DAO, with efforts to collaborate with other SPs, such as @chaoslabs. An example of this is a joint proposal that will be submitted shortly to facilitate further growth of USDe within Aave while mitigating key risks.
+We will continue focusing on key initiatives and delivering outstanding value for the DAO, with efforts to collaborate with other SPs, such as @ChaosLabs. An example of this is a joint proposal that will be submitted shortly to facilitate further growth of USDe within Aave while mitigating key risks.
 
 We welcome community feedback and suggestions. Please share any questions, ideas, or areas where you would like increased focus from the LlamaRisk team.
