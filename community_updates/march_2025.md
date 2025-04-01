@@ -15,6 +15,7 @@ LlamaRisk presents our March 2025 monthly update, summarizing key activities and
 - [\[ARFC\] Add USR to Aave v3 Core Instance](https://governance.aave.com/t/arfc-add-usr-to-aave-v3-core-instance/21444/3) - Recommended onboarding, contingent on establishing a formal bug bounty program, which was recently implemented.
 - [\[ARFC\] Add wstUSR to Aave v3 Core Instance](https://governance.aave.com/t/arfc-add-wstusr-to-aave-v3-core-instance/21443/3) - Recommended onboarding, contingent on establishing a formal bug bounty program, aligning with our stance on USR.
 - [\[ARFC\] Add stS to Aave v3 Sonic Instance](https://governance.aave.com/t/arfc-add-sts-to-aave-v3-sonic-instance/21445/4) - Supported onboarding while highlighting an `OPERATOR_ROLE` misassignment to the deployer EOA, which was subsequently fixed by the team.
+- [[ARFC] Add AAVE token to Aave V3 Base Instance](https://governance.aave.com/t/arfc-add-aave-token-to-aave-v3-base-instance/21105/5) - Supported onboarding as collateral-only on Base with conservative parameters due to sufficient liquidity, distribution, and established presence.
 
 #### New chain
 - [\[ARFC\] Deploy Aave v3 on Plasma](https://governance.aave.com/t/arfc-deploy-aave-v3-on-plasma/21494/2) - Engaging with Plasma's team to address information gaps, as the network's early stage makes issuing a recommendation not possible.
@@ -35,7 +36,7 @@ LlamaRisk presents our March 2025 monthly update, summarizing key activities and
 - [\[ARFC\] Enable eBTC/WBTC liquid E-Mode on Aave v3 Core Instance](https://governance.aave.com/t/arfc-enable-ebtc-wbtc-liquid-e-mode-on-aave-v3-core-instance/20141/10) - Recommended using CAPO with Chainlink's BTC/USD feed for LBTC pricing and suggested a higher supply cap based on improved liquidity.
 
 #### Legal Commentary
-- [\[Temp Check\] Building Horizon’s RWA Product: An Aave Licensed Instance for Institutions](https://governance.aave.com/t/temp-check-building-horizon-s-rwa-product-an-aave-licensed-instance-for-institutions/21384/101) - Expressed interest in collaborating with Aave Labs on an RWA-integrated structure, referencing case studies of similar setups in crypto protocols.
+- [\[Temp Check\] Building Horizon's RWA Product: An Aave Licensed Instance for Institutions](https://governance.aave.com/t/temp-check-building-horizon-s-rwa-product-an-aave-licensed-instance-for-institutions/21384/101) - expressed interest in collaborating with Aave Labs on an RWA-integrated structure, referencing case studies of similar setups in crypto protocols.
 - [\[ARFC\] Add bCSPX to Aave V3 Gnosis Instance](https://governance.aave.com/t/arfc-add-bcspx-to-aave-v3-gnosis-instance/21113/11) - Addressed a delegate's inquiry by providing regulatory clarification on bCSPX listing.
 - [\[ARFC\] Aavenomics implementation: Part one](https://governance.aave.com/t/arfc-aavenomics-implementation-part-one/21248/21) - Supported the proposal and provided key insights on the potential legal ramifications of this update.
 
@@ -46,6 +47,7 @@ LlamaRisk presents our March 2025 monthly update, summarizing key activities and
 - [\[ARFC\] Adjust Risk Parameters for Aave V2 and V3 on Polygon](https://governance.aave.com/t/arfc-adjust-risk-parameters-for-aave-v2-and-v3-on-polygon/20211/62) - Supported the changes while recommending a preference for non-rehypothecated assets within Aave's Polygon market.
 - [\[ARFC\] BGD. Aave ClinicSteward](https://governance.aave.com/t/arfc-bgd-aave-clinicsteward/21209/6) - Supported the elimination of legacy bad debt via the Aave Collector, which [we flagged earlier](https://governance.aave.com/t/arfc-aave-v2-deprecation-update-disable-new-borrows-ir-curve-and-reserve-factor-adjustments/20918/2).
 - [\[ARFC\] Orbit Program Renewal - Q1 2025](https://governance.aave.com/t/arfc-orbit-program-renewal-q1-2025/21205/3) - Supported the Orbit program, emphasizing the importance of a strong delegate ecosystem for Aave DAO.
+- [[ARFC] Onboard Pendle PT tokens to Aave V3 Core Instance](https://governance.aave.com/t/arfc-onboard-pendle-pt-tokens-to-aave-v3-core-instance/20541/8): Supported BGD Labs' dynamic linear discount oracle for Pendle PTs as a balanced pricing solution with appropriate governance controls.
 
 ### Research and analysis
 - [LlamaRisk Insights: sGHO Legal Implications](https://governance.aave.com/t/llamarisk-insights-sgho-legal-implications/21578) - Analyzed key regulatory considerations for stablecoins in the EU, Singapore, and Dubai, assessing their implications on sGHO.
@@ -55,6 +57,8 @@ LlamaRisk presents our March 2025 monthly update, summarizing key activities and
 - [Newsletter: This Week in Aave](https://x.com/aaveweekly) - Continued delivering weekly roundups of Aave governance updates while enhancing content with deeper insights for stakeholders and users.
 
 ## Upcoming Focus Areas
-- [Operation Spring Cleaning](https://www.llamarisk.com/research/spring-cleaning) - Launch is just around with a new rating system and dashboard for existing partners now incorporating asset scoring based on access control, security, legal, dependency, and transparency metrics for DeFi protocols.
+- [Operation Spring Cleaning](https://www.llamarisk.com/research/spring-cleaning) - Launch is just around the corner, with a dashboard for asset scoring based on access control, security, legal, dependency, and transparency metrics for DeFi protocols.
+- In the process of peer reviewing and backtesting our methodology for Umbrella liquidity targets.
+- Monitoring Chainlink SVR V1 (Smart Value Recapture oracles) while providing support and analysis for further parameterization and roll-out.
 
 We welcome community feedback and suggestions. Please share any questions, ideas, or areas where you would like increased focus from the LlamaRisk team.
