@@ -46,6 +46,7 @@ LlamaRisk presents our April 2025 monthly update, summarizing key activities and
 - [\[ARFC\] Aave <> Bored Ghosts Developing. Phase 5](https://governance.aave.com/t/arfc-aave-bored-ghosts-developing-phase-5/21803/7) - Expressed strong support for @bgdlabs' continued service to the Aave ecosystem.
 - [\[ARFC\] Further Deprecate sUSD on Aave V3 Optimism](https://governance.aave.com/t/arfc-further-deprecate-susd-on-aave-v3-optimism/21770/2) - Supported deprecation measures due to sUSD's diminished peg stability following recent changes to Synthetix's pool 420.
 - [\[ARFC\] Onboard Pendle PT tokens to Aave V3 Core Instance](https://governance.aave.com/t/arfc-onboard-pendle-pt-tokens-to-aave-v3-core-instance/20541/8) - Supported @bgdlabs’ dynamic linear discount rate oracle proposal for accurate pricing of Pendle’s Principal Tokens (PTs).
+- Signed emergency transactions related to [rsETH precautionary freezing 30/04/2025](https://governance.aave.com/t/rseth-precautionary-freezing-30-04-2025/21925).
 
 ### Research and analysis
 - [LlamaRisk's Insights: The Pectra Upgrade](https://governance.aave.com/t/llamarisks-insights-the-pectra-upgrade/21829) - Delivered detailed analysis on how Ethereum’s upcoming Pectra upgrade may alter the risk landscape for LSTs and LRTs.
