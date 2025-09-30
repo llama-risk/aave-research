@@ -19,14 +19,9 @@ LlamaRisk presents our September 2025 monthly update, summarizing key activities
 #### New chain
 - [\[ARFC\] Deploy Aave v3 on Plasma](https://governance.aave.com/t/arfc-deploy-aave-v3-on-plasma/21494/6) - Supported deployment with a provisional recommendation given the chain’s testnet phase.
 
-#### GHO related
-
-
 #### E-modes
 - [\[ARFC\] sAVAX LTV & LT Adjustment](https://governance.aave.com/t/arfc-savax-ltv-lt-adjustment/23080/2) - Supported the parameter changes and the addition of the new sAVAX/WAVAX E-mode as they introduce minimal incremental risk.
 - [\[Direct to AIP\] Addition of cbBTC/Stablecoin E-Mode to Aave V3 Base Instance](https://governance.aave.com/t/direct-to-aip-addition-of-cbbtc-stablecoin-e-mode-to-aave-v3-base-instance/23174/2) - Supported the proposal as cbBTC collateral E-modes could drive stablecoin borrowing demand and boost protocol revenue, while posing contained risks given cbBTC’s stable liquidity and strong BTC peg on Base.
-
-#### Legal Commentary
 
 #### Misc.
 - [\[ARFC\] Aave Asset class Allowlist (AAcA)](https://governance.aave.com/t/arfc-aave-asset-class-allowlist-aaca/22597/9) - Shared the initial framework draft with the DAO for feedback. The AAcA provides a structured classification of assets into six groups: Stablecoins, Wrapped Assets, Staking & Restaking Derivatives, Protocol Tokens, Tokenized Financial Instruments, and Specialized & Uncategorized Assets, ensuring clarity for new assets, consistent guidance for community members and SPs, and systematic risk assessment across similar asset categories.
