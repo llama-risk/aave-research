@@ -130,6 +130,4 @@ Underlying pricing mechanism, Dynamic linear discount rate oracle parameters (`d
 
 ### Disclaimer
 
-This review was independently prepared by LlamaRisk, a DeFi risk service provider funded in part by the Aave DAO. LlamaRisk is not directly affiliated with the protocol(s) reviewed in this assessment and did not receive any compensation from the protocol(s) or their affiliated entities for this work.
-
-The information provided should not be construed as legal, financial, tax, or professional advice.
+This review was independently prepared by LlamaRisk, a DeFi risk service provider funded in part by the Aave DAO. LlamaRisk serves as a member of Ethena’s Risk Committee and an independent attester of Ethena’s PoR solution. LlamaRisk did not receive compensation from the protocol(s) or their affiliated entities for this work. The information should not be construed as legal, financial, tax, or professional advice.
