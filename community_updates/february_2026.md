@@ -11,7 +11,7 @@ LlamaRisk presents our February 2026 monthly update, summarizing key activities 
 ### Recommendations and inputs
 
 #### Asset onboarding
-* [\[Direct to AIP\] Onboard BTC.b to Aave V3 Core Instance](https://governance.aave.com/t/direct-to-aip-onboard-btc-b-to-aave-v3-core-instance/23357/5) - Supported onboarding following the successful migration to Lombard’s security model, noting protocol-supplied DEX liquidity, low onchain supply, and the presence of robust administrative safeguards including a timelock and active bug bounty.
+* [\[Direct to AIP\] Onboard BTC.b to Aave V3 Core Instance](https://governance.aave.com/t/direct-to-aip-onboard-btc-b-to-aave-v3-core-instance/23357/5) - Supported onboarding following the successful migration to Lombard’s security model, noting protocol-supplied DEX liquidity, low onchain supply, and the presence of robust administrative safeguards, including a timelock and active bug bounty.
 * [\[Direct to AIP\] Onboard sUSDe and USDe to Aave V3 Base Instance](https://governance.aave.com/t/direct-to-aip-onboard-susde-and-usde-to-aave-v3-base-instance/24121/2) - Supported onboarding contingent on improved liquidity conditions, while noting the absence of a timelock and low onchain supply on Base.
 * [\[ARFC\] Deploy Aave V3 to MegaETH: cUSD & stcUSD](https://governance.aave.com/t/arfc-deploy-aave-v3-to-megaeth/23517/50) - Provisionally supported onboarding subject to improved liquidity depth, noting the absence of a native cUSD/USD feed (temporarily relying on USDC/USD given >95% USDC reserves) and the lack of a bad-debt handling mechanism for loaned reserves, which could overstate cUSD value in a backing loss scenario.
 
@@ -42,13 +42,11 @@ LlamaRisk presents our February 2026 monthly update, summarizing key activities 
 * [Retro: WETH utilization spike and Slope2 Risk Oracle performance](https://governance.aave.com/t/retro-weth-utilization-spike-and-slope2-risk-oracle-performance/24101) - Published a report analyzing Slope2 oracle behavior during two volatility-driven WETH utilization spikes on Aave V3 Ethereum Core, and requested a detailed post-mortem and greater transparency from ChaosLabs regarding delegated rate-setting mechanisms.
 * [LlamaRisk Insights: Custom Stablecoins — A Retail Opportunity for Aave](https://governance.aave.com/t/llamarisk-insights-custom-stablecoins-a-retail-opportunity-for-aave/24107) - Analyzed the emergence of institution-issued custom stablecoins and outlined how Aave, particularly through V4’s Hub-and-Spoke architecture, can leverage issuer distribution networks to position itself as a scalable yield and savings layer for institutional-grade stablecoin ecosystems.
 
-
 ### Community Engagement
-* [Horizon Weekly Highlights](https://governance.aave.com/t/horizon-weekly-highlights/23078/28) - Continued collaborating with the Horizon team on asset due diligence, cap adjustments, and weekly operational updates focused on utilization, user behavior, and parameter changes. As of Week 26, Horizon TVL adjusted to $446M, with $99M in net borrows and $304M in stablecoin supply.
+* [Horizon Weekly Highlights](https://governance.aave.com/t/horizon-weekly-highlights/23078/28) - Continued collaborating with the Horizon team on asset due diligence, cap adjustments, and weekly operational updates focused on utilization, user behavior, and parameter changes. As of Week 26, Horizon TVL is around $446M, with $99M in net borrows and $304M in stablecoin supply.
 * [Newsletter: This Week in Aave](https://x.com/aaveweekly) -  Continued delivering weekly roundups of Aave governance updates while enhancing content with deeper insights for stakeholders and users.
-
 
 ## Upcoming Focus Areas
 * [Aave V4 Preparation](https://aave.com/docs/aave-v4) - Actively working on internal V4-related R&D while participating in the Office Hours for DAO Service Providers to align on technical and risk framework updates.
 
-We welcome community feedback and suggestions. Please share any questions, ideas, or areas where you would like increased focus from the LlamaRisk team.
+We welcome community feedback and suggestions. Please share any questions, ideas, or areas where you would like the LlamaRisk team to focus more.
