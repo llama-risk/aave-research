@@ -45,5 +45,6 @@ LlamaRisk presents our March 2026 monthly update, summarizing key activities and
 
 ## Upcoming Focus Areas
 * [SVR Dashboard](https://svr.llamarisk.com/) - Working on integrating newly expanded Aave markets on Base and Arbitrum into the SVR analytics dashboard.
+* * Numerous initiatives to support Aave V4 launch and expansion. 
 
 We welcome community feedback and suggestions. Please share any questions, ideas, or areas where you would like the LlamaRisk team to focus more.
