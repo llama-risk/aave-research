@@ -23,6 +23,7 @@ LlamaRisk presents our August 2026 monthly update, summarizing key activities an
 
 ### Research and analysis
 * [\[ARFC\] Liquidation Protocol Fee Increase for WBTC, WETH, and wstETH on Aave V3 Ethereum Core](https://governance.aave.com/t/arfc-liquidation-protocol-fee-increase-for-wbtc-weth-and-wsteth-on-aave-v3-ethereum-core/25470) - Reviewed the LPF configuration, which determines the share of liquidation bonuses accrued to the Aave Treasury. Noted that while higher LPF increases protocol revenue, it also suppresses marginal liquidations as LPF and SVR draw from the same liquidation bonus. Under conservative assumptions, Aave’s revenue per dollar liquidated peaks near a 30% fee and falls below current levels at 40%, therefore recommending 20% as the appropriate step at this stage.
+* [Stablecoin IRM Change Analysis on Aave V3](https://governance.aave.com/t/risk-stewards-stablecoin-irm-changes-on-aave-v3-2026-08-27/25533): Assessed stablecoin IRM changes proposed by TokenLogic by analyzing utilization trends, borrower sensitivity to rate increases, the impact of higher rates on supplier deposits, market-wide yield comparisons, borrower responses to rate changes, and historical collateral debt repayment patterns.
 
 ### Risk Stewards
 The following proposals were published by us to update risk parameters via risk stewards:
@@ -41,7 +42,7 @@ The following proposals were published by us to update risk parameters via risk 
 * [Risk Stewards: Cap and IRM Changes on Aave V3 / 2026.08.31](https://governance.aave.com/t/risk-stewards-cap-and-irm-changes-on-aave-v3-2026-08-31/25571)
 
 #### V4 Cap Updates
-We proposed additional rounds of add-and-draw cap increases across the Ethereum and Avalanche hubs, raising the total supply cap ceiling to approximately $802M to accommodate growing demand as multiple reserves approached their limits.
+We proposed additional rounds of add-and-draw cap increases across the Ethereum and Avalanche hubs, raising the total supply cap ceiling to approximately $1.29B to accommodate growing demand as multiple reserves approached their limits.
 * [Add and Draw Cap Increases: Round 12 / 2026.08.03](https://governance.aave.com/t/arfc-aave-v4-activation-on-ethereum-mainnet/24293/40)
 * [Add and Draw Cap Increases: Round 13 / 2026.08.12](https://governance.aave.com/t/arfc-aave-v4-activation-on-ethereum-mainnet/24293/42)
 * [Add and Draw Cap Increases: Round 14 / 2026.08.20](https://governance.aave.com/t/arfc-aave-v4-activation-on-ethereum-mainnet/24293/45)
